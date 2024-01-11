@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity"
+    android:background="@drawable/bgcolor">
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/nameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
+        android:text="Pakistan"
+        android:textColor="#254A27"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/detailsImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:scaleType="centerCrop"
+        android:src="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/nameTxt"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/nameTxt"
+        app:layout_constraintTop_toBottomOf="@+id/nameTxt" />
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:text="Details"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/detailsImage"
+        app:layout_constraintStart_toStartOf="@+id/detailsImage"
+        app:layout_constraintTop_toBottomOf="@+id/detailsImage" />
+
+    <TextView
+        android:id="@+id/detailsTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="20dp"
+        android:justificationMode="inter_word"
+        android:text="Pakistan,[e] officially the Islamic Republic of Pakistan,[f] is a country in South Asia. It is the fifth-most populous country, with a population of over 241.5 million, having the largest Muslim population as of 2023.[8] Islamabad is the nation's capital, while Karachi is its largest city and financial centre. Pakistan is the 33rd-largest country by area, being the second largest in South Asia. Bounded by the Arabian Sea on the south, the Gulf of Oman on the southwest, and the Sir Creek on the southeast, it shares land borders with India to the east; Afghanistan to the west; Iran to the southwest; and China to the northeast. It shares a maritime border with Oman in the Gulf of Oman, and is separated from Tajikistan in the northwest by Afghanistan's narrow Wakhan Corridor.
+Pakistan is the site of several ancient cultures, including the 8,500-year-old Neolithic site of Mehrgarh in Balochistan,[13] the Indus Valley civilisation of the Bronze Age,[14][15] and the ancient Gandhara civilisation.[16] The regions that comprise the modern state of Pakistan were the realm of multiple empires and dynasties, including the Achaemenid, the Maurya, the Kushan, the Gupta;[17] the Umayyad Caliphate in its southern regions, the Samma, the Hindu Shahis, the Shah Miris, the Ghaznavids, the Delhi Sultanate, the Mughals,[18] and most recently, the British Raj from 1858 to 1947.
+Spurred by the Pakistan Movement, which sought a homeland for the Muslims of British India, and election victories in 1946 by the All-India Muslim League, Pakistan gained independence in 1947 after the Partition of the British Indian Empire, which awarded separate statehood to its Muslim-majority regions and was accompanied by an unparalleled mass migration and loss of life.[19] Initially a Dominion of the British Commonwealth, Pakistan officially drafted its constitution in 1956, and emerged as a declared Islamic republic. In 1971, the exclave of East Pakistan seceded as the new country of Bangladesh after a nine-month-long civil war. In the following four decades, Pakistan has been ruled by governments whose descriptions, although complex, commonly alternated between civilian and military, democratic and authoritarian, relatively secular and Islamist.[20] Pakistan elected a civilian government in 2008, and in 2010 adopted a parliamentary system with periodic elections.[21]
+Pakistan is a middle power nation,[22][23][24][25][26][27] and has the world's sixth-largest standing armed forces. It is a declared nuclear-weapons state, and is ranked amongst the emerging and growth-leading economies,[28] with a large and rapidly-growing middle class.[29] Pakistan's political history since independence has been characterised by periods of significant economic and military growth as well as those of political and economic instability. It is an ethnically and linguistically diverse country, with similarly diverse geography and wildlife. The country continues to face challenges, including poverty, illiteracy, corruption and terrorism.[30] Pakistan is a member of the United Nations, the Shanghai Cooperation Organisation, the Organisation of Islamic Cooperation, the Commonwealth of Nations, the South Asian Association for Regional Cooperation, and the Islamic Military Counter-Terrorism Coalition, and is designated as a major non-NATO ally by the United States.."
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/details"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/details"
+        app:layout_constraintTop_toBottomOf="@+id/details" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cal_nev"
+    app:startDestination="@id/bmiFragment">
+
+    <fragment
+        android:id="@+id/bmiFragment"
+        android:name="com.example.allcalculator.BMI_Fragment"
+        android:label="fragment_bmi"
+        tools:layout="@layout/fragment_bmi" />
+    <fragment
+        android:id="@+id/unitFragment"
+        android:name="com.example.allcalculator.Unit_Fragment"
+        android:label="fragment_unit"
+        tools:layout="@layout/fragment_unit" />
+    <fragment
+        android:id="@+id/ageFragment"
+        android:name="com.example.allcalculator.AgeFragment"
+        android:label="fragment_age"
+        tools:layout="@layout/fragment_age" />
+    <fragment
+        android:id="@+id/themeFragment"
+        android:name="com.example.allcalculator.ThemeFragment"
+        android:label="fragment_theme"
+        tools:layout="@layout/fragment_theme" />
+    <fragment
+        android:id="@+id/fontFragment"
+        android:name="com.example.allcalculator.FontFragment"
+        android:label="fragment_font"
+        tools:layout="@layout/fragment_font" />
+</navigation>
