@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1DE9B6"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="Student Information"
+        android:textColor="@color/white"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="Admin Panel"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="4dp"
+        android:src="@drawable/student"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/graduated"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="600dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="250dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="190dp"
+            android:backgroundTint="#1DE8B5"
+            android:text="Add Student"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="#000000"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/updateBtn"
+            android:layout_width="250dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#1DE8B5"
+            android:textSize="20sp"
+            android:text="Update Student"
+            android:textColor="#000000"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/addBtn"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/addBtn"
+            app:layout_constraintTop_toBottomOf="@+id/addBtn"
+            app:strokeColor="#000000"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="250dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#1DE8B5"
+            android:text="Delete Student"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/updateBtn"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/updateBtn"
+            app:layout_constraintTop_toBottomOf="@+id/updateBtn"
+            app:strokeColor="#000000"
+            app:strokeWidth="1dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="224dp"
+        android:src="@drawable/graduate"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
