@@ -121,11 +121,12 @@
         android:id="@+id/profile_image"
         android:layout_width="125dp"
         android:layout_height="125dp"
-        android:layout_marginTop="224dp"
         android:src="@drawable/graduate"
         app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.295" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

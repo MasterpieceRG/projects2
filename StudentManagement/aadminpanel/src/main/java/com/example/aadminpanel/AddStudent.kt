@@ -26,14 +26,14 @@ class AddStudent : AppCompatActivity() {
 
             database = FirebaseDatabase.getInstance().getReference("Students")
             val student = StudentData(name, id, email, phone, subject, batch)
-            database.child(id.toString()).setValue(student)
+            database.child(id).setValue(student)
                 .addOnSuccessListener {
                     Toast.makeText(this, "Student Data Added", Toast.LENGTH_SHORT).show()
                     startActivity(Intent(this@AddStudent, MainActivity::class.java))
                     finishAffinity()
                 }
                 .addOnFailureListener {
-                    Toast.makeText(this@AddStudent,"Added Failed",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@AddStudent,"Add Failed",Toast.LENGTH_SHORT).show()
                 }
         }
     }
