@@ -76,7 +76,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="12dp"
-            android:layout_marginTop="65dp"
+            android:layout_marginTop="75dp"
             android:hint="ID"
             app:endIconMode="clear_text"
             app:layout_constraintEnd_toStartOf="@+id/searchBtn"
@@ -239,12 +239,11 @@
         android:id="@+id/profile_image"
         android:layout_width="125dp"
         android:layout_height="125dp"
+        android:layout_marginBottom="636dp"
         android:src="@drawable/graduate"
         app:civ_border_width="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.163" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
