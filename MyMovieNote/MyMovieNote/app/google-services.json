@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "846059856275",
+    "project_id": "mymovienote-fd484",
+    "storage_bucket": "mymovienote-fd484.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846059856275:android:8bd9d3057ada05733e0866",
+        "android_client_info": {
+          "package_name": "com.example.mymovienote"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBg7DvcNVVkYKukeR9q1ndrh505yfn722g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
